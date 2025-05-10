@@ -1,29 +1,33 @@
-🎯 Number Guessing Game in C (with Queue Data Structure)
-This C-based console project blends programming logic with data structure application. It simulates a number guessing game where all wrong guesses are stored in a queue implemented using a linked list. Designed for learners, it strengthens understanding of dynamic memory management and queue operations.
+****🎯 Number Guessing Game in C (with Queue Data Structure)****
 
-🧠 Project Objective
+*This C-based console project blends programming logic with data structure application. It simulates a number guessing game where all wrong guesses are stored in a queue implemented using a linked list. Designed for learners, it strengthens understanding of dynamic memory management and queue operations.*
+
+
+**🧠 Project Objective**
 The goal of this project is to:
 
-Implement a number guessing game with multiple difficulty levels.
+1) Implement a number guessing game with multiple difficulty levels.
 
-Use a queue (linked list) to store all incorrect guesses in the order they were made.
+2) Use a queue (linked list) to store all incorrect guesses in the order they were made.
 
-Offer user-friendly interaction with hints and the ability to exit or replay the game.
+3) Offer user-friendly interaction with hints and the ability to exit or replay the game.
+
 
 Demonstrate practical usage of:
 
-Random number generation
+1) Random number generation
 
-Queue operations (enqueue and traversal)
+2) Queue operations (enqueue and traversal)
 
-Dynamic memory allocation
+3) Dynamic memory allocation
 
-Looping and conditionals
+4) Looping and conditionals
 
-Function modularity
+5) Function modularity
 
-🔑 Key Features
-🔢 Difficulty Selection:
+
+**🔑 Key Features**
+*🔢 Difficulty Selection:*
 
 Easy (0–100)
 
@@ -31,11 +35,13 @@ Medium (0–1000)
 
 Hard (0–5000)
 
-💡 Smart Hint System:
+
+**💡 Smart Hint System:**
 
 Tells users if they need to guess a higher or lower number after each attempt
 
-🧾 Guess Tracking with Queue:
+
+*🧾 Guess Tracking with Queue:*
 
 All wrong guesses are dynamically stored in a queue using linked list
 
@@ -43,19 +49,25 @@ Efficient memory handling using malloc()
 
 Prevents memory waste by deallocating when needed
 
-❌ Quit Anytime:
+
+*❌ Quit Anytime:*
 
 Users can enter -1 to exit mid-game
 
-🔁 Replay Option:
+
+*🔁 Replay Option:*
 
 After each game, users can choose to replay
 
-📜 Guess Display:
+
+*📜 Guess Display:*
 
 At game end, the queue is traversed to show all incorrect attempts in order
 
-🛠️ Technical Breakdown
+
+
+**🛠️ Technical Breakdown**
+
 ✅ Queue Implementation
 A linked list is used to simulate queue behavior.
 
@@ -96,7 +108,8 @@ Random number setup
 
 User prompts and validation
 
-🎓 Educational Value
+
+**🎓 Educational Value**
 This project helps students and beginners in:
 
 Applying data structures like queues in a real scenario
