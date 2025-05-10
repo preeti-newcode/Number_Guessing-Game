@@ -1,37 +1,108 @@
-****🎮 Number Guessing Game Using Queue in C****
+🎯 Number Guessing Game in C (with Queue Data Structure)
+This C-based console project blends programming logic with data structure application. It simulates a number guessing game where all wrong guesses are stored in a queue implemented using a linked list. Designed for learners, it strengthens understanding of dynamic memory management and queue operations.
 
-This interactive console-based number guessing game is designed to reinforce core programming logic and data structure concepts—specifically, the Queue implemented via a linked list. Users guess a randomly generated number based on difficulty level, with all incorrect guesses tracked dynamically in a queue.
+🧠 Project Objective
+The goal of this project is to:
 
-**🚀 Features**
-Difficulty Levels:
+Implement a number guessing game with multiple difficulty levels.
+
+Use a queue (linked list) to store all incorrect guesses in the order they were made.
+
+Offer user-friendly interaction with hints and the ability to exit or replay the game.
+
+Demonstrate practical usage of:
+
+Random number generation
+
+Queue operations (enqueue and traversal)
+
+Dynamic memory allocation
+
+Looping and conditionals
+
+Function modularity
+
+🔑 Key Features
+🔢 Difficulty Selection:
+
 Easy (0–100)
+
 Medium (0–1000)
+
 Hard (0–5000)
 
-Dynamic Guess Tracking:
-Incorrect guesses are stored in a queue (linked list)
-Memory managed via malloc()
-Wrong attempts displayed at the end
+💡 Smart Hint System:
 
-Intelligent Hints:
-Suggests whether the guess should be higher or lower
+Tells users if they need to guess a higher or lower number after each attempt
 
-User Options:
-Enter -1 anytime to quit
-Replay mode included after each game
+🧾 Guess Tracking with Queue:
 
-**🛠️ Technical Overview**
-Queue Implementation:
-Linked list used for storing guesses
-insert() adds to rear, display() prints wrong attempts
+All wrong guesses are dynamically stored in a queue using linked list
 
-Random Number Logic:
-Uses rand() and srand(time(NULL)) for unique numbers
+Efficient memory handling using malloc()
 
-Input Handling:
-Takes user input via scanf()
+Prevents memory waste by deallocating when needed
 
-Gracefully exits and offers replay on user command
+❌ Quit Anytime:
 
-This project provides a fun and educational approach to practicing data structures, especially dynamic queues, while building problem-solving and logic skills in C programming.
+Users can enter -1 to exit mid-game
 
+🔁 Replay Option:
+
+After each game, users can choose to replay
+
+📜 Guess Display:
+
+At game end, the queue is traversed to show all incorrect attempts in order
+
+🛠️ Technical Breakdown
+✅ Queue Implementation
+A linked list is used to simulate queue behavior.
+
+Functions used:
+
+insert() to enqueue each wrong guess at the rear
+
+display() to print all guesses in FIFO order
+
+Queue structure prevents memory overflow by dynamically managing nodes
+
+✅ Random Number Generation
+Uses:
+
+rand() to generate a random number within the selected range
+
+srand(time(NULL)) to ensure randomness on each run
+
+✅ User Interaction
+Input via scanf() for smooth console-based play
+
+Graceful exit using -1
+
+Option to replay or terminate after each round
+
+✅ Modularity
+Clean, modular code structure:
+
+main() handles flow
+
+Dedicated functions for:
+
+Game logic
+
+Queue operations
+
+Random number setup
+
+User prompts and validation
+
+🎓 Educational Value
+This project helps students and beginners in:
+
+Applying data structures like queues in a real scenario
+
+Understanding dynamic memory allocation
+
+Practicing looping, branching, and user input handling
+
+Writing clean, modular C code
